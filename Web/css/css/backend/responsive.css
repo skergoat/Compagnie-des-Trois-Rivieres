@@ -1,0 +1,201 @@
+@media all and (max-width:1087px) {
+
+	/** save button **/
+
+	#button-save-all {
+
+		display:flex;
+		justify-content: center;
+		transition:0.5s;
+	}
+
+	/***
+	*
+	*	NAVBAR 
+	*
+	***/
+
+	.navbar-end {
+
+		display:none;
+	}
+
+	.navbar-responsive { 
+
+		display:flex;
+		justify-content: space-between;
+		width:100%;
+	}
+
+	.navbar-responsive-child {
+
+		display:flex;
+	}
+
+	.navbar-responsive-child:hover, .navbar-brand a.navbar-item:hover {
+
+		background:#B63D30;
+	}
+
+	.navbar-brand:hover {
+
+		background:#C83F2D;
+	}
+
+	/***
+	*
+	*	MEDIA 
+	*
+	***/
+
+	.container-form {
+
+		padding-right:10px;
+	}
+
+	#menu-media {
+
+		max-width:400px;
+		margin:auto;
+		margin-top:50px;
+	}
+
+	.doors {
+
+		padding-left:50px;
+		padding-right:50px;
+	}
+
+}
+
+@media all and (max-width:700px) { 
+
+	/** messages **/
+
+	.message-and-validate {
+
+		flex-direction:column;
+	}
+
+	.success-modify, .error-modify {
+
+		margin:auto;
+		width:95%;
+		text-align:center;
+	}
+
+	/** card images **/
+
+	.image.is-16by9 img {
+
+		width:100%;
+		object-fit: cover;
+	}
+
+	/** error **/
+
+	.navbar-error {
+
+		position:relative;
+	}
+
+	.container-error {
+
+		height:auto;
+	}
+
+	.doors {
+
+		flex-direction:column;
+		margin-bottom:50px;
+		text-align:center;
+		padding:0px;
+	}
+
+	.doors div a img {
+
+		display:block;
+		margin:auto;
+		margin-bottom:100px;
+	}
+
+
+
+
+
+}
+
+
+@media all and (max-width:400px) { 
+
+	/** messages **/
+
+	.message-and-validate {
+
+		flex-direction:column;
+	}
+
+	.container-messages {
+
+		padding-left:5px;
+		padding-right:5px;
+	}
+
+	#success-animations .message-body, 
+	#error-animations .message-body, 
+	#success-workshops .message-body, 
+	#error-workshops .message-body,
+	#success-prejudices .message-body, 
+	#error-prejudices .message-body,
+	#success-characters .message-body, 
+	#error-characters .message-body,
+	#index-error .message-body,
+	#index-success .message-body,
+	#error-update .message-body,
+	#success-update .message-body,
+	#show-error .message-body,
+	#show-success .message-body
+	{ 
+		text-align:left;
+	}
+
+	/** modules **/
+
+	.padding-responsive {
+
+		padding-left:0px;
+		padding-right:0px;
+	}
+
+	.tabs { 
+
+		padding-left:5px;
+	}
+
+	.section-admin {
+
+		padding:5px;
+	}
+
+	/** recover **/
+
+	.container-recover input {
+
+		width:100%;
+	}
+
+	.container-recover input[type="submit"] {
+
+		width:100px;
+	}
+
+	.container-forgotten {
+
+		padding-left:10px;
+		padding-right:10px;
+	}
+
+	
+
+}
+

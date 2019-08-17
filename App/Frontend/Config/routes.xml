@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<routes>
+  
+  <route url="/" module="Home" action="index" />
+  <route url="/organisation" module="Home" action="organisation" />
+  <route url="/contact" module="Home" action="contact" />
+  <route url="/send" module="Home" action="send" />
+
+  <route url="/animations" module="Animations" action="index" />
+  <route url="/characters" module="Characters" action="index" />
+  <route url="/workshops" module="Workshops" action="index" />
+  <route url="/prejudices" module="Prejudices" action="index" />
+
+  <route url="/animations-paginate-([0-9]+)" module="Animations" action="index" vars="paginate" />
+  <route url="/workshops-paginate-([0-9]+)" module="Workshops" action="index" vars="paginate" />
+  <route url="/prejudices-paginate-([0-9]+)" module="Prejudices" action="index" vars="paginate" />
+
+  <route url="/animations-([0-9]+)" module="Animations" action="show" vars="id" />
+  <route url="/workshops-([0-9]+)" module="Workshops" action="show" vars="id"/>
+  <route url="/prejudices-([0-9]+)" module="Prejudices" action="show" vars="id"/>
+
+  <route url="/animations-ajax-([0-9]+)" module="Animations" action="ajax" vars="id"/>
+  <route url="/workshops-ajax-([0-9]+)" module="Workshops" action="ajaxWorkshops" vars="id"/>
+  <route url="/prejudices-ajax-([0-9]+)" module="Prejudices" action="ajaxPrejudices" vars="id"/>
+
+  <route url="/forgotten" module="Manage" action="index" />
+  <route url="/checkmail-([0-9]+)-([0-9]+)" module="Manage" action="checkMail" vars="rand,id" />
+  <route url="/checkcode-([0-9]+)-([0-9]+)" module="Manage" action="checkCode" vars ="rand,id"/>
+  <route url="/checkpassword" module="Manage" action="checkPassword" />
+
+</routes>

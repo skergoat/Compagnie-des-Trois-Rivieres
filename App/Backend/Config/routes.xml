@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<routes>
+
+   <!-- main -->
+   <route url="/admin/" module="Animations" action="index" />
+   <route url="/admin/workshops" module="Workshops" action="index" />
+   <route url="/admin/characters" module="Characters" action="index" />
+   <route url="/admin/prejudices" module="Prejudices" action="index" />
+
+   <!-- paginate -->
+   
+   <route url="/admin/paginate-([0-9]+)" module="Animations" action="index" vars="paginate" />
+   <route url="/admin/animations-delete-([0-9]+)-([0-9]+)" module="Animations" action="delete" vars="id,page" />
+
+   <route url="/admin/workshops-paginate-([0-9]+)" module="Workshops" action="index" vars="paginate" />
+   <route url="/admin/workshops-delete-([0-9]+)-([0-9]+)" module="Workshops" action="delete" vars="id,page" />
+
+   <route url="/admin/characters-paginate-([0-9]+)" module="Characters" action="index" vars="paginate" />
+   <route url="/admin/characters-delete-([0-9]+)-([0-9]+)" module="Characters" action="delete" vars="id,page" />
+
+   <route url="/admin/prejudices-paginate-([0-9]+)" module="Prejudices" action="index" vars="paginate" />
+   <route url="/admin/prejudices-delete-([0-9]+)-([0-9]+)" module="Prejudices" action="delete" vars="id,page" />
+
+   <route url="/admin/manage-show-paginate-([0-9]+)" module="Manage" action="show" vars="paginate" />
+   <route url="/admin/manage-delete-([0-9]+)-([0-9]+)" module="Manage" action="delete" vars="id,page" />
+
+   <!-- create !!!!!! -->
+   <route url="/admin/create" module="Animations" action="create" />
+   <route url="/admin/workshops/create" module="Workshops" action="create" />
+   <route url="/admin/characters/create" module="Characters" action="create" />
+   <route url="/admin/prejudices/create" module="Prejudices" action="create" />
+   
+   <!-- update -->
+   <route url="/admin/animations-modify-([0-9]+)" module="Animations" action="modify" vars="id" />
+   <route url="/admin/workshops-modify-([0-9]+)" module="Workshops" action="modify" vars="id" />
+   <route url="/admin/prejudices-modify-([0-9]+)" module="Prejudices" action="modify" vars="id" />
+   <route url="/admin/characters-modify-([0-9]+)" module="Characters" action="modify" vars="id" />
+
+   <!-- delete -->
+   <route url="/admin/animations-delete-([0-9]+)" module="Animations" action="delete" vars="id" />
+   <route url="/admin/workshops-delete-([0-9]+)" module="Workshops" action="delete" vars="id" />
+   <route url="/admin/prejudices-delete-([0-9]+)" module="Prejudices" action="delete" vars="id" />
+   <route url="/admin/characters-delete-([0-9]+)" module="Characters" action="delete" vars="id" />
+
+   <!-- load media sidebar (ajax) -->
+
+   <route url="/admin/animations-media-([a-z]+)-([0-9]+)" module="Animations" action="media" vars="mediatype,id" />
+   <route url="/admin/workshops-media-([a-z]+)-([0-9]+)" module="Workshops" action="media" vars="mediatype,id" />
+   <route url="/admin/prejudices-media-([a-z]+)-([0-9]+)" module="Prejudices" action="media" vars="mediatype,id" />
+
+   <!-- admin -->
+   <route url="/admin/manage" module="Manage" action="index" />
+   <route url="/admin/manage-show" module="Manage" action="show" />
+   <route url="/admin/manage-modify-([0-9]+)" module="Manage" action="modify" vars= "id"/>
+   <route url="/admin/manage-delete-([0-9]+)" module="Manage" action="delete" vars= "id"/>
+
+    <!-- logout -->
+   <route url="/admin/logout" module="Connexion" action="logout" />
+
+</routes>
