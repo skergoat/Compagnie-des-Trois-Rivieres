@@ -1,3 +1,3 @@
 # compagnie
 
-https://compagniedestroisrivieres.com
+Living demo : https://compagniedestroisrivieres.com
